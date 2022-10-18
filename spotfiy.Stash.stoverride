@@ -1,0 +1,13 @@
+#spotify去广告
+http:
+  script:
+    - match: ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)
+      name: spotify
+      type: response 
+      require-body: true
+      timeout: 20
+ 
+script-providers:
+  spotify:
+    url: https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+    interval: 86400
