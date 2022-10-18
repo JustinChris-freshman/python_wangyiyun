@@ -1,5 +1,6 @@
 #spotify去广告
 name: spotify crack
+desc: 1
 http:
   mitm:
     - 'spclient.wg.spotify.com'
